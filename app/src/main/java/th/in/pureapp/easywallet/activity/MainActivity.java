@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                                 infoTable.remove(amountAdapter.getIdByIndex(position));
                                 amountAdapter.removeByIndex(position);
                                 amountAdapter.notifyDataSetChanged();
+                                updateSummary();
                             }
                         }).show();
                 return false;
